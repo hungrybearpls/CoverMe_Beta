@@ -1,0 +1,84 @@
+{
+  "bars": [
+    {
+      "bar_image": "https://avatars1.githubusercontent.com/u/12619420?s=400&u=eac38b075e4e4463edfb0f0a8972825cf7803d4c&v=4",
+      "bar_name": "Pawan Kumar",
+      "bar_desc": "Google Developer Expert, Flutter",
+      "bar_session": "Talk: Getting Started With Flutter For Web",
+      "fb_url": "https://facebook.com/imthepk",
+      "github_url": "https://github.com/iampawan",
+      "linkedin_url": "https://linkedin.com/in/imthepk",
+      "twitter_url": "https://twitter.com/imthepk"
+    },
+    {
+      "bar_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/L2FwcGhvc3RpbmdfZ2xvYmFsL2Jsb2JzL0FFbkIyVW9DRktRcllTZDN1T2VINnhiUC11M2pVUFZFLVI0dVh5czF6d2lKNGRwanJjVjJhWm1zSUJZelVkZzBRaG9uRkNJZmhVZEg3ZGpVV0RhRmpQWXFYeHU0Y1ZDRmROb3FQYnVBQ2VKMWdOSFRHS3B0YWxRLk8xa3k2cVpFOG15UFAyRnk",
+      "bar_name": "Laura Morinigo",
+      "bar_desc": "Software Developer, DMod Labs",
+      "bar_session": "How I Became a Mobile Developer with Firebase and Flutter",
+      "fb_url": "https://facebook.com/imthepk",
+      "github_url": "https://github.com/iampawan",
+      "linkedin_url": "https://linkedin.com/in/imthepk",
+      "twitter_url": "https://twitter.com/imthepk"
+    },
+    {
+      "bar_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/L2FwcGhvc3RpbmdfZ2xvYmFsL2Jsb2JzL0FFbkIyVXJET043VnFRT2R1UHdyS1lFUElwLVNaYlVVbnc1enJuNTNGbUtQQjR0SF9STVUzMVptdkgzclRpRjhTUDc2WUNvNldKNFVacFhiXzF4bUoxTVc0RzlfXzF3d2tPUXl4NTNSNjBNSzRoaXB1VVBxOTRFLk0yOHMwWm1NeURjaWxQZ1k",
+      "bar_name": "Jimenez Raul",
+      "bar_desc": "Software Engineer, Byte Default",
+      "bar_session": "Angular Elements",
+      "fb_url": "https://facebook.com/imthepk",
+      "github_url": "https://github.com/iampawan",
+      "linkedin_url": "https://linkedin.com/in/imthepk",
+      "twitter_url": "https://twitter.com/imthepk"
+    },
+    {
+      "bar_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/AEnB2UozlnKuWKqwaGjT2U6ylLLyMtoByOnx-ctrRmn5A8kptjCS50E8EgQDSuxYg8chsldOmSLbHScKX0ERlngHvbRp5XVRyNuAUSIm_Hguq3THTisLLaU.UyKUL3gyFQsEAcmO",
+      "bar_name": "Sathish V J",
+      "bar_desc": "Tech Architect, Investor, Tutor",
+      "bar_session": "Machine Learning and AutoML on GCP",
+      "fb_url": "https://facebook.com/imthepk",
+      "github_url": "https://github.com/iampawan",
+      "linkedin_url": "https://linkedin.com/in/imthepk",
+      "twitter_url": "https://twitter.com/imthepk"
+    },
+    {
+      "bar_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/AEnB2UqZAYU9q0R5K2cq94DxU7ebiOMhilDlx5NzzsWWZ_oHxqcZV8H8j594rg_q_vyfTToA0BfScTHOHAj8uKf2OeF5MVqa_jmdjC9JO9-2TcPWjboxPf8.NN-XmkQxmHl1XyY_",
+      "bar_name": "Timothy Jordan",
+      "bar_desc": "Sr. Staff Developer Advocate, Google",
+      "bar_session": "Top 5 from Firebase Summit '18",
+      "fb_url": "https://facebook.com/imthepk",
+      "github_url": "https://github.com/iampawan",
+      "linkedin_url": "https://linkedin.com/in/imthepk",
+      "twitter_url": "https://twitter.com/imthepk"
+    },
+    {
+      "bar_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/L2FwcGhvc3RpbmdfZ2xvYmFsL2Jsb2JzL0FFbkIyVXJ2Zkg0YUY1ZFJoMFFRbWlqdFE4MV9nNTdJR0dxUS1ubVJfbkN2Y1RaS3VoaUp2dWd3ejNmUmJRekFQaU5QNGhqd1F6cUtKQXpYeXJkemVyS2hUY1NzSWloMXFCNzQzdmpRVVVmU0Z4XzJZRDVZQXVBLnFHVllKVmc2MUVzQVZ5bVI",
+      "bar_name": "Tanay Pant",
+      "bar_desc": "Web Developer Advocate, Mozilla Foundation",
+      "bar_session": "Multiplayer Games with WebXR",
+      "fb_url": "https://facebook.com/imthepk",
+      "github_url": "https://github.com/iampawan",
+      "linkedin_url": "https://linkedin.com/in/imthepk",
+      "twitter_url": "https://twitter.com/imthepk"
+    },
+    {
+      "bar_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/AEnB2UqEG002BsGCqZLZRFUGu9xo4IpGamz6gTqlWxWyME0s-n8gR7Rs0tM5R6mPMOCRYf5rAunWx0GQeXDUHPag_XWGApdekw.cks8tPlPy-TeucOT",
+      "bar_name": "Eric Maxwell",
+      "bar_desc": "Software Developer, Big Nerd Ranch",
+      "bar_session": "Mobile Database Persistence",
+      "fb_url": "https://facebook.com/imthepk",
+      "github_url": "https://github.com/iampawan",
+      "linkedin_url": "https://linkedin.com/in/imthepk",
+      "twitter_url": "https://twitter.com/imthepk"
+    },
+    {
+      "bar_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/L2FwcGhvc3RpbmdfZ2xvYmFsL2Jsb2JzL0FFbkIyVXBET0RKT0JBV195UjVuSDRKS3JEenphN2gzLW80WEdvenlGdkZhNGREUzFmQUk1RjJnR0N5eEJIdlBkOVhlLUdwalVSWXlxbXJ4VFA0QXRZdnB4WDllWFNpdmdiNy14Q0tLOENCeU41Yks4NF9vUVQ0LlVFY0RBeld0ZTd4OEtSUTg",
+      "bar_name": "Yohan Totting",
+      "bar_desc": "Web Developer Advocate, Google",
+      "bar_session": "Progressive Experience Web Development",
+      "fb_url": "https://facebook.com/imthepk",
+      "github_url": "https://github.com/iampawan",
+      "linkedin_url": "https://linkedin.com/in/imthepk",
+      "twitter_url": "https://twitter.com/imthepk"
+    }
+  ]
+}

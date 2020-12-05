@@ -1,0 +1,103 @@
+{
+  "notifications": [
+    {
+      "notification_id": "1",
+      "notification_start_time": "9:00 AM",
+      "notification_total_time": "30 Mins",
+      "notification_title": "DevByte: From Zero to ML on Google Cloud Platform",
+      "notification_desc": "The async/await feature allows you to write the asynchronous code in a straightforward way without a long list of callbacks. Used in C# for quite a while already, it has proven to be extremely useful.In Kotlin you have async and await as library functions implemented using coroutines. A coroutine is a light-weight thread that can be suspended and resumed later. Very precise definition, but might be confusing at first. What 'light-weight thread' means? How does suspension work? This talk uncovers the magic. We'll discuss the concept of coroutines, the power of async/await, and how you can benefit from defining your asynchronous computations using suspend function. The content of this video was not produced or created by Google.",
+      "venue_image": "https://avatars1.githubusercontent.com/u/12619420?s=400&u=eac38b075e4e4463edfb0f0a8972825cf7803d4c&v=4",
+      "venue_name": "Max Saltonstall",
+      "venue_desc": "Cloud Developer Advocate, Google DevByte bar",
+      "track": "bar"
+    },
+    {
+      "notification_id": "2",
+      "notification_start_time": "9:30 AM",
+      "notification_total_time": "30 Mins",
+      "notification_title": "How I Became a Mobile Developer with Firebase and Flutter",
+      "notification_desc": "The async/await feature allows you to write the asynchronous code in a straightforward way without a long list of callbacks. Used in C# for quite a while already, it has proven to be extremely useful.In Kotlin you have async and await as library functions implemented using coroutines. A coroutine is a light-weight thread that can be suspended and resumed later. Very precise definition, but might be confusing at first. What 'light-weight thread' means? How does suspension work? This talk uncovers the magic. We'll discuss the concept of coroutines, the power of async/await, and how you can benefit from defining your asynchronous computations using suspend function. The content of this video was not produced or created by Google.",
+      "venue_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/L2FwcGhvc3RpbmdfZ2xvYmFsL2Jsb2JzL0FFbkIyVW9DRktRcllTZDN1T2VINnhiUC11M2pVUFZFLVI0dVh5czF6d2lKNGRwanJjVjJhWm1zSUJZelVkZzBRaG9uRkNJZmhVZEg3ZGpVV0RhRmpQWXFYeHU0Y1ZDRmROb3FQYnVBQ2VKMWdOSFRHS3B0YWxRLk8xa3k2cVpFOG15UFAyRnk",
+      "venue_name": "Laura Morinigo",
+      "venue_desc": "Software Developer, DMod Labs",
+      "track": "club"
+    },
+    {
+      "notification_id": "3",
+      "notification_start_time": "10:30 AM",
+      "notification_total_time": "30 Mins",
+      "notification_title": "Angular Elements",
+      "notification_desc": "The async/await feature allows you to write the asynchronous code in a straightforward way without a long list of callbacks. Used in C# for quite a while already, it has proven to be extremely useful.In Kotlin you have async and await as library functions implemented using coroutines. A coroutine is a light-weight thread that can be suspended and resumed later. Very precise definition, but might be confusing at first. What 'light-weight thread' means? How does suspension work? This talk uncovers the magic. We'll discuss the concept of coroutines, the power of async/await, and how you can benefit from defining your asynchronous computations using suspend function. The content of this video was not produced or created by Google.",
+      "venue_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/L2FwcGhvc3RpbmdfZ2xvYmFsL2Jsb2JzL0FFbkIyVXJET043VnFRT2R1UHdyS1lFUElwLVNaYlVVbnc1enJuNTNGbUtQQjR0SF9STVUzMVptdkgzclRpRjhTUDc2WUNvNldKNFVacFhiXzF4bUoxTVc0RzlfXzF3d2tPUXl4NTNSNjBNSzRoaXB1VVBxOTRFLk0yOHMwWm1NeURjaWxQZ1k",
+      "venue_name": "Jimenez Raul",
+      "venue_desc": "Software Engineer, Byte Default",
+      "track": "restaurant"
+    },
+    {
+      "notification_id": "4",
+      "notification_start_time": "11:00 AM",
+      "notification_total_time": "45 Mins",
+      "notification_title": "Machine Learning and AutoML on GCP",
+      "notification_desc": "The async/await feature allows you to write the asynchronous code in a straightforward way without a long list of callbacks. Used in C# for quite a while already, it has proven to be extremely useful.In Kotlin you have async and await as library functions implemented using coroutines. A coroutine is a light-weight thread that can be suspended and resumed later. Very precise definition, but might be confusing at first. What 'light-weight thread' means? How does suspension work? This talk uncovers the magic. We'll discuss the concept of coroutines, the power of async/await, and how you can benefit from defining your asynchronous computations using suspend function. The content of this video was not produced or created by Google.",
+      "venue_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/AEnB2UozlnKuWKqwaGjT2U6ylLLyMtoByOnx-ctrRmn5A8kptjCS50E8EgQDSuxYg8chsldOmSLbHScKX0ERlngHvbRp5XVRyNuAUSIm_Hguq3THTisLLaU.UyKUL3gyFQsEAcmO",
+      "venue_name": "Sathish V J",
+      "venue_desc": "Tech Architect, Investor, Tutor",
+      "track": "bar"
+    },
+    {
+      "notification_id": "5",
+      "notification_start_time": "1:00 PM",
+      "notification_total_time": "45 Mins",
+      "notification_title": "Top 5 from Firebase Summit '18",
+      "notification_desc": "The async/await feature allows you to write the asynchronous code in a straightforward way without a long list of callbacks. Used in C# for quite a while already, it has proven to be extremely useful.In Kotlin you have async and await as library functions implemented using coroutines. A coroutine is a light-weight thread that can be suspended and resumed later. Very precise definition, but might be confusing at first. What 'light-weight thread' means? How does suspension work? This talk uncovers the magic. We'll discuss the concept of coroutines, the power of async/await, and how you can benefit from defining your asynchronous computations using suspend function. The content of this video was not produced or created by Google.",
+      "venue_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/AEnB2UqZAYU9q0R5K2cq94DxU7ebiOMhilDlx5NzzsWWZ_oHxqcZV8H8j594rg_q_vyfTToA0BfScTHOHAj8uKf2OeF5MVqa_jmdjC9JO9-2TcPWjboxPf8.NN-XmkQxmHl1XyY_",
+      "venue_name": "Timothy Jordan",
+      "venue_desc": "Sr. Staff Developer Advocate, Google",
+      "track": "restaurant"
+    },
+    {
+      "notification_id": "6",
+      "notification_start_time": "2:00 PM",
+      "notification_total_time": "45 Mins",
+      "notification_title": "Multiplayer Games with WebXR",
+      "notification_desc": "The async/await feature allows you to write the asynchronous code in a straightforward way without a long list of callbacks. Used in C# for quite a while already, it has proven to be extremely useful.In Kotlin you have async and await as library functions implemented using coroutines. A coroutine is a light-weight thread that can be suspended and resumed later. Very precise definition, but might be confusing at first. What 'light-weight thread' means? How does suspension work? This talk uncovers the magic. We'll discuss the concept of coroutines, the power of async/await, and how you can benefit from defining your asynchronous computations using suspend function. The content of this video was not produced or created by Google.",
+      "venue_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/L2FwcGhvc3RpbmdfZ2xvYmFsL2Jsb2JzL0FFbkIyVXJ2Zkg0YUY1ZFJoMFFRbWlqdFE4MV9nNTdJR0dxUS1ubVJfbkN2Y1RaS3VoaUp2dWd3ejNmUmJRekFQaU5QNGhqd1F6cUtKQXpYeXJkemVyS2hUY1NzSWloMXFCNzQzdmpRVVVmU0Z4XzJZRDVZQXVBLnFHVllKVmc2MUVzQVZ5bVI",
+      "venue_name": "Tanay Pant",
+      "venue_desc": "Web Developer Advocate, Mozilla Foundation",
+      "track": "restaurant"
+    },
+    {
+      "notification_id": "7",
+      "notification_start_time": "3:00 PM",
+      "notification_total_time": "45 Mins",
+      "notification_title": "Mobile Database Persistence",
+      "notification_desc": "The async/await feature allows you to write the asynchronous code in a straightforward way without a long list of callbacks. Used in C# for quite a while already, it has proven to be extremely useful.In Kotlin you have async and await as library functions implemented using coroutines. A coroutine is a light-weight thread that can be suspended and resumed later. Very precise definition, but might be confusing at first. What 'light-weight thread' means? How does suspension work? This talk uncovers the magic. We'll discuss the concept of coroutines, the power of async/await, and how you can benefit from defining your asynchronous computations using suspend function. The content of this video was not produced or created by Google.",
+      "venue_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/AEnB2UqEG002BsGCqZLZRFUGu9xo4IpGamz6gTqlWxWyME0s-n8gR7Rs0tM5R6mPMOCRYf5rAunWx0GQeXDUHPag_XWGApdekw.cks8tPlPy-TeucOT",
+      "venue_name": "Eric Maxwell",
+      "venue_desc": "Software Developer, Big Nerd Ranch",
+      "track": "club"
+    },
+    {
+      "notification_id": "8",
+      "notification_start_time": "4:00 PM",
+      "notification_total_time": "45 Mins",
+      "notification_title": "Progressive Experience Web Development",
+      "notification_desc": "The async/await feature allows you to write the asynchronous code in a straightforward way without a long list of callbacks. Used in C# for quite a while already, it has proven to be extremely useful.In Kotlin you have async and await as library functions implemented using coroutines. A coroutine is a light-weight thread that can be suspended and resumed later. Very precise definition, but might be confusing at first. What 'light-weight thread' means? How does suspension work? This talk uncovers the magic. We'll discuss the concept of coroutines, the power of async/await, and how you can benefit from defining your asynchronous computations using suspend function. The content of this video was not produced or created by Google.",
+      "venue_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/L2FwcGhvc3RpbmdfZ2xvYmFsL2Jsb2JzL0FFbkIyVXBET0RKT0JBV195UjVuSDRKS3JEenphN2gzLW80WEdvenlGdkZhNGREUzFmQUk1RjJnR0N5eEJIdlBkOVhlLUdwalVSWXlxbXJ4VFA0QXRZdnB4WDllWFNpdmdiNy14Q0tLOENCeU41Yks4NF9vUVQ0LlVFY0RBeld0ZTd4OEtSUTg",
+      "venue_name": "Yohan Totting",
+      "venue_desc": "Web Developer Advocate, Google",
+      "track": "restaurant"
+    },
+    {
+      "notification_id": "9",
+      "notification_start_time": "5:00 PM",
+      "notification_total_time": "45 Mins",
+      "notification_title": "Kotlin Coroutines",
+      "notification_desc": "The async/await feature allows you to write the asynchronous code in a straightforward way without a long list of callbacks. Used in C# for quite a while already, it has proven to be extremely useful.In Kotlin you have async and await as library functions implemented using coroutines. A coroutine is a light-weight thread that can be suspended and resumed later. Very precise definition, but might be confusing at first. What 'light-weight thread' means? How does suspension work? This talk uncovers the magic. We'll discuss the concept of coroutines, the power of async/await, and how you can benefit from defining your asynchronous computations using suspend function. The content of this video was not produced or created by Google.",
+      "venue_image": "https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/L2FwcGhvc3RpbmdfZ2xvYmFsL2Jsb2JzL0FFbkIyVW9XdVlxYUljN0RsYm1kejJaZFpkNENVMm1aTWhxU3VhNEtTVEoza3lBYVpDdGJsei1tSFB2ajNDc2FuZEdBbmNOMGlPZGtWRkJicHR6S1R0UVYxc1V2bXk0TWlBbnItWG00a3ZZc0laZ3VmVkg4NU5vLm1jNWdnX1pEZV8yT2FDalM",
+      "venue_name": "Svetlana Isakova",
+      "venue_desc": "Developer Advocate, Jetbrain",
+      "track": "club"
+    }
+  ]
+}
