@@ -145,7 +145,7 @@ class VenuePage extends StatelessWidget {
         },
         itemCount: allVenues.length,
       ),
-      title: "${Venues()}",
+      title: "$allVenues.track",
     );
   }
 }

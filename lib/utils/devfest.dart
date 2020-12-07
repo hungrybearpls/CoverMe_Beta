@@ -63,7 +63,7 @@ class Devfest {
   static const String clubs_text = "Clubs";
   static const String restaurants_text = "Restaurants";
   static const String sponsor_text = "Venue Profile";
-  static const String faq_text = "Profile";
+  static const String faq_text = "Daily";
   static const String map_text = "Locate Us";
 
   //* Preferences

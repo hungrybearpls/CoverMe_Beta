@@ -180,3 +180,4 @@ _GDG DevFest App is not endorsed and/or supported by Google, the corporation._
 # CoverMe
 # coverme_version1.2
 # CoverMe_v1
+# CoverMe_Beta

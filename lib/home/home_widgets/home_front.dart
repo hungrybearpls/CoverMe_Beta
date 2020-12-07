@@ -40,65 +40,65 @@ class HomeFront extends StatelessWidget {
     }
   }
 
-  Widget actions(context) => Wrap(
-        alignment: WrapAlignment.center,
-        spacing: 10.0,
-        children: <Widget>[
-          RaisedButton(
-            child: Text("Bars"),
-            shape: StadiumBorder(),
-            color: Colors.red,
-            colorBrightness: Brightness.dark,
-            onPressed: () =>
-                Navigator.pushNamed(context, NotificationPage.routeName),
-          ),
-          RaisedButton(
-            child: Text("Clubs"),
-            shape: StadiumBorder(),
-            color: Colors.green,
-            colorBrightness: Brightness.dark,
-            onPressed: () =>
-                Navigator.pushNamed(context, BarPageScreen.routeName),
-          ),
-          RaisedButton(
-            child: Text("Restaurants"),
-            shape: StadiumBorder(),
-            color: Colors.green,
-            colorBrightness: Brightness.dark,
-            onPressed: () =>
-                Navigator.pushNamed(context, RestaurantPageScreen.routeName),
-          ),
-          RaisedButton(
-            child: Text("Venue Profile"),
-            shape: StadiumBorder(),
-            color: Colors.orange,
-            colorBrightness: Brightness.dark,
-            onPressed: () =>
-                Navigator.pushNamed(context, VenueProfilePage.routeName),
-          ),
-          RaisedButton(
-            child: Text("Club"),
-            shape: StadiumBorder(),
-            color: Colors.purple,
-            colorBrightness: Brightness.dark,
-            onPressed: () => Navigator.pushNamed(context, ClubPage.routeName),
-          ),
-          RaisedButton(
-            child: Text("Profile"),
-            shape: StadiumBorder(),
-            color: Colors.green,
-            colorBrightness: Brightness.dark,
-            onPressed: () => Navigator.pushNamed(context, FaqPage.routeName),
-          ),
-          RaisedButton(
-            child: Text("Locate Us"),
-            shape: StadiumBorder(),
-            color: Colors.blue,
-            colorBrightness: Brightness.dark,
-            onPressed: () => Navigator.pushNamed(context, MapPage.routeName),
-          ),
-        ],
-      );
+  // Widget actions(context) => Wrap(
+  //       alignment: WrapAlignment.center,
+  //       spacing: 10.0,
+  //       children: <Widget>[
+  //         RaisedButton(
+  //           child: Text("Bars"),
+  //           shape: StadiumBorder(),
+  //           color: Colors.red,
+  //           colorBrightness: Brightness.dark,
+  //           onPressed: () =>
+  //               Navigator.pushNamed(context, NotificationPage.routeName),
+  //         ),
+  //         RaisedButton(
+  //           child: Text("Clubs"),
+  //           shape: StadiumBorder(),
+  //           color: Colors.green,
+  //           colorBrightness: Brightness.dark,
+  //           onPressed: () =>
+  //               Navigator.pushNamed(context, BarPageScreen.routeName),
+  //         ),
+  //         RaisedButton(
+  //           child: Text("Restaurants"),
+  //           shape: StadiumBorder(),
+  //           color: Colors.green,
+  //           colorBrightness: Brightness.dark,
+  //           onPressed: () =>
+  //               Navigator.pushNamed(context, RestaurantPageScreen.routeName),
+  //         ),
+  //         RaisedButton(
+  //           child: Text("Venue Profile"),
+  //           shape: StadiumBorder(),
+  //           color: Colors.orange,
+  //           colorBrightness: Brightness.dark,
+  //           onPressed: () =>
+  //               Navigator.pushNamed(context, VenueProfilePage.routeName),
+  //         ),
+  //         RaisedButton(
+  //           child: Text("Club"),
+  //           shape: StadiumBorder(),
+  //           color: Colors.purple,
+  //           colorBrightness: Brightness.dark,
+  //           onPressed: () => Navigator.pushNamed(context, ClubPage.routeName),
+  //         ),
+  //         RaisedButton(
+  //           child: Text("Profile"),
+  //           shape: StadiumBorder(),
+  //           color: Colors.green,
+  //           colorBrightness: Brightness.dark,
+  //           onPressed: () => Navigator.pushNamed(context, FaqPage.routeName),
+  //         ),
+  //         RaisedButton(
+  //           child: Text("Locate Us"),
+  //           shape: StadiumBorder(),
+  //           color: Colors.blue,
+  //           colorBrightness: Brightness.dark,
+  //           onPressed: () => Navigator.pushNamed(context, MapPage.routeName),
+  //         ),
+  //       ],
+  //     );
 
   Widget newActions(context) => Wrap(
         alignment: WrapAlignment.center,
@@ -152,20 +152,20 @@ class HomeFront extends StatelessWidget {
             onPressed: () => Navigator.pushNamed(context, MapPage.routeName),
           ),
           ActionCard(
-            icon: Icons.account_balance_wallet_outlined,
+            icon: Icons.account_box,
             color: Colors.pinkAccent,
             title: Devfest.sponsor_text,
             onPressed: () =>
                 Navigator.pushNamed(context, VenueProfilePage.routeName),
           ),
           ActionCard(
-            icon: Icons.person,
+            icon: Icons.calendar_today,
             color: Colors.amberAccent,
             title: Devfest.faq_text,
             onPressed: () => Navigator.pushNamed(context, FaqPage.routeName),
           ),
           ActionCard(
-            icon: Icons.notifications_on_sharp,
+            icon: Icons.post_add,
             color: Colors.orangeAccent,
             title: 'Notify',
             onPressed: () {},
