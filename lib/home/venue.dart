@@ -64,6 +64,10 @@ class VenueData {
 }
 
 class Venues {
+  static const String typeBar = 'bar';
+  static const String typeClub = 'club';
+  static const String typeRestaurant = 'restaurant';
+
   String venueId;
   String venueName;
   String venueDesc;
