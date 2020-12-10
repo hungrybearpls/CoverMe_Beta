@@ -5,20 +5,19 @@ import 'package:flutter_devfest/utils/dependency_injection.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
 import 'package:flutter_devfest/utils/simple_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
+import 'package:firebase_core/firebase_core.dart';
 import 'config/config_page.dart';
 
 Future<void> main() async {
-  
-  // If you're running an application and need to access the binary messenger before `runApp()` 
-// has been called (for example, during plugin initialization), then you need to explicitly 
+  // If you're running an application and need to access the binary messenger before `runApp()`
+// has been called (for example, during plugin initialization), then you need to explicitly
 // call the `WidgetsFlutterBinding.ensureInitialized()` first.
 // If you're running a test, you can call the `TestWidgetsFlutterBinding.ensureInitialized()`
 //  as the first line in your test's `main()` method to initialize the binding.)
 
-WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
 
-  
   SystemChrome.setSystemUIOverlayStyle(
     SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,

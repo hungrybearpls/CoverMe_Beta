@@ -3,30 +3,31 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_devfest/home/home_bloc.dart';
 import 'package:flutter_devfest/home/home_state.dart';
 import 'package:flutter_devfest/venue_pages/venue_page.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_devfest/home/venue.dart';
 
 class BarPageScreen extends StatelessWidget {
   static const String routeName = "/barpage_screen";
 
-  const BarPageScreen({
+  BarPageScreen({
     Key key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // var state = homeBloc.currentState as InHomeState;
-    // var barList = state.venueData.venue;
-    // var barVenues = barList.where((s) => s.track == "bar").toList();
-    return BlocBuilder(
-        bloc: BlocProvider.of<HomeBloc>(context),
-        builder: (context, state) {
-          if (state is InHomeState) {
-            return VenuePage(
-                allVenues: state.venueData.venue
-                    .where((s) => s.track == "bar")
-                    .toList());
+    final venues = FirebaseFirestore.instance.collection('venues');
+    return StreamBuilder(
+        stream: venues.snapshots(),
+        builder: (context, snapshot) {
+          if (!snapshot.hasData) {
+            return CircularProgressIndicator();
           }
-          return CircularProgressIndicator();
+          return VenuePage(
+              allVenues: snapshot.data.documents
+                  .map((document) => Venues.fromJson(document.data()))
+                  .toList()
+                  .cast<Venues>());
         });
-    // return VenuePage(allVenues: barVenues);
   }
 }

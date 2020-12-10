@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1039419302150",
+    "firebase_url": "https://covermeapp-57d77-default-rtdb.firebaseio.com",
+    "project_id": "covermeapp-57d77",
+    "storage_bucket": "covermeapp-57d77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039419302150:android:ffcd7d82946f4a317afe87",
+        "android_client_info": {
+          "package_name": "com.app.coverme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039419302150-0htrsac9pfdhjtlfdrbqv3n9enlaae6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOZQdvEPEhhgZ6McqctJpTSQXsuws6N3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039419302150-0htrsac9pfdhjtlfdrbqv3n9enlaae6b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1039419302150-rqpf47g9nlbjh0o5adsf7iuc8ddo06re.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.coverme"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

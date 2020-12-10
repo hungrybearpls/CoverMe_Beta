@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_devfest/bars/bar_page.dart';
-import 'package:flutter_devfest/clubs/club_page.dart';
 import 'package:flutter_devfest/config/index.dart';
+import 'package:flutter_devfest/create_venues/send_post.dart';
 import 'package:flutter_devfest/create_venues/venue_profile_page.dart';
 import 'package:flutter_devfest/faq/faq_page.dart';
 import 'package:flutter_devfest/find_devfest/find_devfest_page.dart';
@@ -12,7 +11,6 @@ import 'package:flutter_devfest/home/index.dart';
 import 'package:flutter_devfest/map/map_page.dart';
 import 'package:flutter_devfest/notifications/create_notification.dart';
 import 'package:flutter_devfest/notifications/notification_page.dart';
-import 'package:flutter_devfest/restaurants/restaurant_page.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
 import 'package:flutter_devfest/venue_pages/barpage_screen.dart';
 import 'package:flutter_devfest/venue_pages/clubpage_screen.dart';
@@ -74,10 +72,11 @@ class _ConfigPageState extends State<ConfigPage> {
               routes: {
                 HomePage.routeName: (context) => HomePage(),
                 BarPageScreen.routeName: (context) => BarPageScreen(),
-                RestaurantPage.routeName: (context) => RestaurantPageScreen(),
+                RestaurantPageScreen.routeName: (context) => RestaurantPageScreen(),
                 NotificationPage.routeName: (context) => NotificationPage(),
                 VenueProfilePage.routeName: (context) => VenueProfilePage(),
-                ClubPage.routeName: (context) => ClubPageScreen(),
+                ClubPageScreen.routeName: (context) => ClubPageScreen(),
+                SendPost.routeName: (context) => SendPost(),
                 FaqPage.routeName: (context) => FaqPage(),
                 FindDevFestPage.routeName: (context) => FindDevFestPage(),
                 MapPage.routeName: (context) => MapPage(),

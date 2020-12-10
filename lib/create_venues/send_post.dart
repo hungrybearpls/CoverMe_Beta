@@ -3,12 +3,14 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_devfest/universal/dev_scaffold.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 
 import '../utils/devfest.dart';
 
 class SendPost extends StatelessWidget {
+  static const String routeName = "/send_post";
   Widget socialActions(context) => FittedBox(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -39,7 +41,8 @@ class SendPost extends StatelessWidget {
       );
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return DevScaffold(
+      title: "Send Post",
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(18.0),
@@ -138,44 +141,22 @@ class SendPost extends StatelessWidget {
                   ),
                 ],
               ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Expanded(
-                    child: RadioButtonGroup(
-                      // onChange:
-                      labels: <String>[
-                        "No Cover",
-                        "\$5",
-                        "\$10",
-                        "\$20",
-                        "\$50",
-                        "Custom"
-                      ],
-                      orientation: GroupedButtonsOrientation.HORIZONTAL,
-                      activeColor: Colors.blueAccent,
-                      onSelected: (String selected) => print(selected),
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 10,
-              ),
               TextFormField(
                 textAlign: TextAlign.center,
-                decoration: InputDecoration(
-                    hintText: 'Custom Cover Price (Include \$)'),
+                decoration: InputDecoration(hintText: '8PM - 12AM'),
                 onChanged: (text) {
                   // do something with text
                 },
                 validator: (val) {
                   if (val.length == 0) {
-                    return "Custom Cover";
+                    return "Hours of Operation";
                   } else {
                     return null;
                   }
                 },
+              ),
+              SizedBox(
+                height: 10,
               ),
               SizedBox(
                 height: 50,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_devfest/home/venue.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -14,38 +15,38 @@ class CreateNotification extends StatelessWidget {
           children: <Widget>[
             IconButton(
               icon: Icon(
-                FontAwesomeIcons.facebookF,
+                FontAwesomeIcons.phoneAlt,
                 size: 15,
               ),
               onPressed: () {
-                launch(venue[0].fbUrl);
+                launch(venues[0].venuePhone);
               },
             ),
             IconButton(
               icon: Icon(
-                FontAwesomeIcons.twitter,
+                FontAwesomeIcons.instagram,
                 size: 15,
               ),
               onPressed: () {
-                launch(venue[0].twitterUrl);
+                launch(venues[0].igUrl);
               },
             ),
             IconButton(
               icon: Icon(
-                FontAwesomeIcons.linkedinIn,
+                FontAwesomeIcons.facebook,
                 size: 15,
               ),
               onPressed: () {
-                launch(venue[0].linkedinUrl);
+                launch(venues[0].fbUrl);
               },
             ),
             IconButton(
               icon: Icon(
-                FontAwesomeIcons.github,
+                FontAwesomeIcons.directions,
                 size: 15,
               ),
               onPressed: () {
-                launch(venue[0].githubUrl);
+                launch(venues[0].venueAddress);
               },
             ),
           ],
@@ -55,6 +56,7 @@ class CreateNotification extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DevScaffold(
+      title: "Create Post",
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(18.0),

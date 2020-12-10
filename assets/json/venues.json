@@ -104,6 +104,7 @@
   "clubs": [
     {
       "venue_name": "Club 1",
+      "track": "club",
       "venue_cover": "$20",
       "daily_headline": "Dance the Night Away",
       "venue_phone": "0000000000",

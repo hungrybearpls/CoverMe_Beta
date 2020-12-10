@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_devfest/bars/bar_page.dart';
-import 'package:flutter_devfest/clubs/club_page.dart';
 import 'package:flutter_devfest/config/index.dart';
+import 'package:flutter_devfest/create_venues/send_post.dart';
 import 'package:flutter_devfest/create_venues/venue_profile_page.dart';
 import 'package:flutter_devfest/faq/faq_page.dart';
 import 'package:flutter_devfest/map/map_page.dart';
 import 'package:flutter_devfest/notifications/notification_page.dart';
-import 'package:flutter_devfest/restaurants/restaurant_page.dart';
 import 'package:flutter_devfest/universal/image_card.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
 import 'package:flutter_devfest/utils/tools.dart';
+import 'package:flutter_devfest/venue_auth/screens/onboarding_slides.dart';
+import 'package:flutter_devfest/venue_auth/welcome_login/onboarding_welcome.dart';
+import 'package:flutter_devfest/venue_auth/welcome_login/signin_page.dart';
 import 'package:flutter_devfest/venue_pages/barpage_screen.dart';
+import 'package:flutter_devfest/venue_pages/clubpage_screen.dart';
 import 'package:flutter_devfest/venue_pages/restaurantpage_screen.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -116,14 +118,15 @@ class HomeFront extends StatelessWidget {
             icon: FontAwesomeIcons.glassCheers,
             color: Colors.deepPurple,
             title: Devfest.clubs_text,
-            onPressed: () => Navigator.pushNamed(context, ClubPage.routeName),
+            onPressed: () =>
+                Navigator.pushNamed(context, ClubPageScreen.routeName),
           ),
           ActionCard(
             icon: Icons.restaurant,
             color: Colors.red,
             title: Devfest.restaurants_text,
             onPressed: () =>
-                Navigator.pushNamed(context, RestaurantPage.routeName),
+                Navigator.pushNamed(context, RestaurantPageScreen.routeName),
           ),
           // ActionCard(
           //   icon: Icons.person,
@@ -168,7 +171,7 @@ class HomeFront extends StatelessWidget {
             icon: Icons.post_add,
             color: Colors.orangeAccent,
             title: 'Notify',
-            onPressed: () {},
+            onPressed: () => Navigator.pushNamed(context, SendPost.routeName),
           ),
         ],
       );
@@ -202,18 +205,19 @@ class HomeFront extends StatelessWidget {
               },
             ),
             IconButton(
-              icon: Icon(FontAwesomeIcons.meetup),
-              onPressed: () async {
-                await _launchURL("https://meetup.com/");
-              },
-            ),
-            IconButton(
               icon: Icon(FontAwesomeIcons.envelope),
               onPressed: () async {
                 var emailUrl =
                     '''mailto:mtechviral@gmail.com?subject=Support Needed For DevFest App&body={Name: Pawan Kumar},Email: pawan221b@gmail.com}''';
                 var out = Uri.encodeFull(emailUrl);
                 await _launchURL(out);
+              },
+            ),
+            IconButton(
+              icon: Icon(FontAwesomeIcons.signInAlt),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SigninPage()));
               },
             ),
           ],

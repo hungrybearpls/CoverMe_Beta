@@ -9,6 +9,7 @@ import 'package:grouped_buttons/grouped_buttons.dart';
 import '../utils/devfest.dart';
 
 class DailyProfile extends StatelessWidget {
+  static const String routeName = "/daily_profile";
   Widget socialActions(context) => FittedBox(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,

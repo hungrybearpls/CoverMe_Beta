@@ -40,6 +40,9 @@ class Devfest {
   static const String welcomeText = "Cover Me Client App";
   static const String descText =
       '''DevFests are community-led, developer events hosted by GDG chapters around the globe focused on community building & learning about Google’s technologies. Each DevFest is inspired by and uniquely tailored to the needs of the developer community and region that hosts it.''';
+  static const String onboardingWelcomeText = "Welcome to Cover Me";
+  static const String onboardingDesc =
+      "Please enter all your business's credentialsd";
 
   static const String loading_text = "Loading...";
   static const String try_again_text = "Try Again";
@@ -65,6 +68,8 @@ class Devfest {
   static const String sponsor_text = "Venue Profile";
   static const String faq_text = "Daily";
   static const String map_text = "Locate Us";
+  static const String signin_text = "Sign In";
+  static const String signup_text = "Sign Up";
 
   //* Preferences
   static SharedPreferences prefs;
