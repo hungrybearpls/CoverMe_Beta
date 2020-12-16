@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
+import 'package:f_datetimerangepicker/f_datetimerangepicker.dart';
+import 'package:date_time_picker_widget/date_time_picker_widget.dart';
 
 import '../utils/devfest.dart';
 
@@ -41,6 +43,7 @@ class SendPost extends StatelessWidget {
       );
   @override
   Widget build(BuildContext context) {
+    String resultString;
     return DevScaffold(
       title: "Send Post",
       body: SingleChildScrollView(
@@ -106,6 +109,7 @@ class SendPost extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  // DateTimePickerType(),
                   Expanded(
                     child: TextFormField(
                       textAlign: TextAlign.center,

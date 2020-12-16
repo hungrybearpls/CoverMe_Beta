@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocListener(
-      bloc: BlocProvider.of<HomeBloc>(context),
+      cubit: BlocProvider.of<HomeBloc>(context),
       listener: (context, state) {
         if (state is ErrorHomeState) {
           showDialog(
@@ -21,14 +21,14 @@ class HomeScreen extends StatelessWidget {
             builder: (context) => ErrorDialog(
               error: state.errorMessage,
               onTap: () {
-                BlocProvider.of<HomeBloc>(context).dispatch(LoadHomeEvent());
+                BlocProvider.of<HomeBloc>(context).add(LoadHomeEvent());
               },
             ),
           );
         }
       },
       child: BlocBuilder<HomeBloc, HomeState>(
-          bloc: BlocProvider.of<HomeBloc>(context),
+          cubit: BlocProvider.of<HomeBloc>(context),
           builder: (
             BuildContext context,
             HomeState currentState,

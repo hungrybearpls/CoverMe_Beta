@@ -8,11 +8,11 @@ class ClubScreen extends StatelessWidget {
   const ClubScreen({Key key, this.homeBloc}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    var state = homeBloc.currentState as InHomeState;
-    var notifications = state.venueData.post;
-    var clubSessions = notifications.where((s) => s.track == "club").toList();
-    return NotificationList(
-      allPosts: clubSessions,
-    );
+    // var state = homeBloc.currentState as InHomeState;
+    // var notifications = state.venueData.post;
+    // var clubSessions = notifications.where((s) => s.track == "club").toList();
+    // return NotificationList(
+    //   allPosts: clubSessions,
+    // );
   }
 }

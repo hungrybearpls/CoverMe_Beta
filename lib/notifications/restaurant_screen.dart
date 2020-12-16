@@ -8,12 +8,12 @@ class RestaurantScreen extends StatelessWidget {
   const RestaurantScreen({Key key, this.homeBloc}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    var state = homeBloc.currentState as InHomeState;
-    var notifications = state.venueData.post;
-    var restaurantSessions =
-        notifications.where((s) => s.track == "restaurant").toList();
-    return NotificationList(
-      allPosts: restaurantSessions,
-    );
+    // var state = homeBloc.currentState as InHomeState;
+    // var notifications = state.venueData.post;
+    // var restaurantSessions =
+    //     notifications.where((s) => s.track == "restaurant").toList();
+    // return NotificationList(
+    //   allPosts: restaurantSessions,
+    // );
   }
 }

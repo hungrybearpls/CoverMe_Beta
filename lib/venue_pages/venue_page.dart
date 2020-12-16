@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -22,14 +22,14 @@ class VenuesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final venues = FirebaseFirestore.instance
-        .collection('venues')
-        .where('type', isEqualTo: this.type);
+    // final venues = FirebaseFirestore.instance
+    //     .collection('venues')
+    //     .where('type', isEqualTo: this.type);
 
     return DevScaffold(
         title: this._typeToTitle(this.type),
         body: StreamBuilder(
-          stream: venues.snapshots(),
+          // stream: venues.snapshots(),
           builder: (context, snapshot) {
             if (!snapshot.hasData) {
               return CircularProgressIndicator();

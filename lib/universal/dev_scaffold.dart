@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/config/config_bloc.dart';
 import 'package:flutter_devfest/config/config_event.dart';
+import 'package:flutter_devfest/venue_pages/userProfile/userProfileScreen.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share/share.dart';
 
@@ -16,11 +17,89 @@ class DevScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: Duration(milliseconds: 500),
-      color: ConfigBloc().darkModeOn ? Colors.grey[800] : Colors.white,
+      color: Colors.white,
       child: SafeArea(
         top: false,
         bottom: false,
         child: Scaffold(
+          drawer: Drawer(
+            child: ListView(
+              children: [
+                Column(
+                  children: [
+                    Stack(
+                      children: [
+                        Align(
+                          widthFactor: 7,
+                          alignment: Alignment.centerRight,
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => UserProfile()));
+                            },
+                            child: CircleAvatar(
+                              backgroundColor: Colors.black,
+                            ),
+                          ),
+                        ),
+                        Align(
+                          widthFactor: 6,
+                          alignment: Alignment.center,
+                          child: Padding(
+                            padding: EdgeInsets.only(left: 25.0, right: 0.0),
+                            child: OutlineButton(
+                              textColor: Colors.black,
+                              color: Colors.white,
+                              child: Text("Help"),
+                              onPressed: () {},
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30.0),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Padding(
+                            padding: EdgeInsets.only(left: 25.0),
+                            child: ClipRRect(
+                              borderRadius:
+                                  BorderRadius.circular(5.0), //or 15.0
+                              child: Container(
+                                  height: 40.0,
+                                  width: 40.0,
+                                  color: Colors.black,
+                                  child: Icon(Icons.volume_up)),
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+                ListTile(
+                  title: Text('Venue Profile'),
+                ),
+                ListTile(
+                  title: Text('Send Post'),
+                ),
+                ListTile(
+                  title: Text('Tile'),
+                ),
+                ListTile(
+                  title: Text('Analytics'),
+                ),
+                ListTile(
+                  title: Text('Settings'),
+                ),
+                ListTile(
+                  title: Text('Assign Roles'),
+                ),
+              ],
+            ),
+          ),
           appBar: AppBar(
             title: Text(title),
             centerTitle: true,
@@ -34,8 +113,7 @@ class DevScaffold extends StatelessWidget {
                   size: 18,
                 ),
                 onPressed: () {
-                  ConfigBloc()
-                      .dispatch(DarkModeEvent(!ConfigBloc().darkModeOn));
+                  // ConfigBloc().add(DarkModeEvent(!ConfigBloc().darkModeOn));
                 },
               ),
               IconButton(

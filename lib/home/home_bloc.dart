@@ -3,11 +3,7 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter_devfest/home/index.dart';
 
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
-  static final HomeBloc _homeBlocSingleton = HomeBloc._internal();
-  factory HomeBloc() {
-    return _homeBlocSingleton;
-  }
-  HomeBloc._internal();
+  HomeBloc() : super(UnHomeState());
 
   HomeState get initialState => UnHomeState();
 
@@ -17,10 +13,10 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   ) async* {
     yield UnHomeState();
     try {
-      yield await event.applyAsync(currentState: currentState, bloc: this);
+      yield await event.applyAsync(currentState: state, bloc: this);
     } catch (_, stackTrace) {
       print('$_ $stackTrace');
-      yield currentState;
+      yield state;
     }
   }
 }

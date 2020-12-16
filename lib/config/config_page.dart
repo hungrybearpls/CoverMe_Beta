@@ -40,9 +40,9 @@ class _ConfigPageState extends State<ConfigPage> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider<HomeBloc>(
-      builder: (context) => HomeBloc()..dispatch(LoadHomeEvent()),
+      create: (context) => HomeBloc()..add(LoadHomeEvent()),
       child: BlocProvider(
-        builder: (context) => configBloc,
+        create: (context) => configBloc,
         child: BlocBuilder<ConfigBloc, ConfigState>(
           builder: (context, state) {
             return MaterialApp(
@@ -72,7 +72,8 @@ class _ConfigPageState extends State<ConfigPage> {
               routes: {
                 HomePage.routeName: (context) => HomePage(),
                 BarPageScreen.routeName: (context) => BarPageScreen(),
-                RestaurantPageScreen.routeName: (context) => RestaurantPageScreen(),
+                RestaurantPageScreen.routeName: (context) =>
+                    RestaurantPageScreen(),
                 NotificationPage.routeName: (context) => NotificationPage(),
                 VenueProfilePage.routeName: (context) => VenueProfilePage(),
                 ClubPageScreen.routeName: (context) => ClubPageScreen(),
