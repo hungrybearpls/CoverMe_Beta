@@ -1,12 +1,10 @@
 import 'dart:math';
 
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_devfest/universal/dev_scaffold.dart';
+import 'package:flutter_devfest/universal/page_scaffold.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 
-import '../universal/dev_scaffold.dart';
 import '../utils/devfest.dart';
 import '../utils/tools.dart';
 
@@ -16,7 +14,7 @@ class VenueProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // var _homeBloc = HomeBloc();
-    return DevScaffold(
+    return PageScaffold(
       title: "Venue Profile",
       body: SingleChildScrollView(
         child: Padding(
@@ -33,14 +31,14 @@ class VenueProfilePage extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Text(
-                "VENUE ADDRESS",
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.title.copyWith(
-                      fontSize: 14,
-                      color: Tools.multiColors[Random().nextInt(4)],
-                    ),
-              ),
+              // Text(
+              //   "VENUE ADDRESS",
+              //   textAlign: TextAlign.center,
+              //   style: Theme.of(context).textTheme.title.copyWith(
+              //         fontSize: 14,
+              //         color: Tools.multiColors[Random().nextInt(4)],
+              //       ),
+              // ),
               SizedBox(
                 height: 20,
               ),
@@ -196,6 +194,39 @@ class VenueProfilePage extends StatelessWidget {
               SizedBox(
                 height: 50,
               ),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Text('Venue Bio:',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                        fontFamily: Devfest.google_sans_family, fontSize: 20)),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: TextField(
+                      keyboardType: TextInputType.text,
+                      maxLines: 5,
+                      maxLength: 140,
+                      maxLengthEnforced: true,
+                      decoration: InputDecoration(
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(width: 1.0),
+                          borderRadius: BorderRadius.circular(25.0),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(width: 1.0),
+                          borderRadius: BorderRadius.circular(25.0),
+                        ),
+                        hintText: 'Venue Description',
+                      ),
+                    ),
+                  )
+                ],
+              ),
               RaisedButton(
                 child: Text(
                   'Save',
@@ -211,27 +242,6 @@ class VenueProfilePage extends StatelessWidget {
               ),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class SponsorImage extends StatelessWidget {
-  final String imgUrl;
-
-  const SponsorImage({Key key, this.imgUrl}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      elevation: 0.0,
-      child: Padding(
-        padding: const EdgeInsets.all(12.0),
-        child: CachedNetworkImage(
-          imageUrl: imgUrl,
-          height: 200.0,
-          width: 200.0,
-          fit: BoxFit.contain,
         ),
       ),
     );

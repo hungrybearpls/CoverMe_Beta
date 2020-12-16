@@ -26,8 +26,10 @@ class VenuesPage extends StatelessWidget {
     //     .collection('venues')
     //     .where('type', isEqualTo: this.type);
 
-    return DevScaffold(
-        title: this._typeToTitle(this.type),
+    return Scaffold(
+        appBar: AppBar(
+          title: Text(this._typeToTitle(this.type)),
+        ),
         body: StreamBuilder(
           // stream: venues.snapshots(),
           builder: (context, snapshot) {

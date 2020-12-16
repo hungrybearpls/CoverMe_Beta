@@ -33,8 +33,6 @@ class _ConfigPageState extends State<ConfigPage> {
 
   setupApp() {
     configBloc = ConfigBloc();
-    configBloc.darkModeOn =
-        Devfest.prefs.getBool(Devfest.darkModePref) ?? false;
   }
 
   @override
@@ -52,18 +50,14 @@ class _ConfigPageState extends State<ConfigPage> {
                 //* Custom Google Font
                 fontFamily: Devfest.google_sans_family,
                 primarySwatch: Colors.red,
-                primaryColor:
-                    configBloc.darkModeOn ? Colors.black : Colors.white,
+                primaryColor: Colors.white,
                 disabledColor: Colors.grey,
-                cardColor: configBloc.darkModeOn ? Colors.black : Colors.white,
-                canvasColor:
-                    configBloc.darkModeOn ? Colors.black : Colors.grey[50],
-                brightness:
-                    configBloc.darkModeOn ? Brightness.dark : Brightness.light,
-                buttonTheme: Theme.of(context).buttonTheme.copyWith(
-                    colorScheme: configBloc.darkModeOn
-                        ? ColorScheme.dark()
-                        : ColorScheme.light()),
+                cardColor: Colors.white,
+                canvasColor: Colors.grey[50],
+                brightness: Brightness.light,
+                buttonTheme: Theme.of(context)
+                    .buttonTheme
+                    .copyWith(colorScheme: ColorScheme.light()),
                 appBarTheme: AppBarTheme(
                   elevation: 0.0,
                 ),
@@ -78,7 +72,7 @@ class _ConfigPageState extends State<ConfigPage> {
                 VenueProfilePage.routeName: (context) => VenueProfilePage(),
                 ClubPageScreen.routeName: (context) => ClubPageScreen(),
                 SendPost.routeName: (context) => SendPost(),
-                FaqPage.routeName: (context) => FaqPage(),
+                DailyPage.routeName: (context) => DailyPage(),
                 FindDevFestPage.routeName: (context) => FindDevFestPage(),
                 MapPage.routeName: (context) => MapPage(),
                 CreateNotification.routeName: (context) => CreateNotification(),

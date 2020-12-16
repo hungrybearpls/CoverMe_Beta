@@ -19,7 +19,7 @@ class NotificationPage extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: DevScaffold(
-        title: "Notifications",
+        title: "Feed",
         tabBar: TabBar(
           indicatorSize: TabBarIndicatorSize.label,
           indicatorColor: Tools.multiColors[Random().nextInt(4)],

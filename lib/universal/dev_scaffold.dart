@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_devfest/config/config_bloc.dart';
-import 'package:flutter_devfest/config/config_event.dart';
+import 'package:flutter_devfest/create_venues/daily_profile.dart';
+import 'package:flutter_devfest/create_venues/send_post.dart';
+import 'package:flutter_devfest/faq/faq_page.dart';
+import 'package:flutter_devfest/home/home_widgets/home_front.dart';
+import 'package:flutter_devfest/notifications/notification_page.dart';
+import 'package:flutter_devfest/utils/devfest.dart';
 import 'package:flutter_devfest/venue_pages/userProfile/userProfileScreen.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share/share.dart';
 
 class DevScaffold extends StatelessWidget {
@@ -10,8 +13,17 @@ class DevScaffold extends StatelessWidget {
   final Widget body;
   final Widget tabBar;
 
-  const DevScaffold(
-      {Key key, @required this.body, @required this.title, this.tabBar})
+  int _selectedIndex = 0;
+  List<Widget> _widgetOptions = <Widget>[HomeFront(), NotificationPage()];
+
+// @SLY
+  void _onItemTap(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
+  DevScaffold({Key key, @required this.body, @required this.title, this.tabBar})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -22,6 +34,20 @@ class DevScaffold extends StatelessWidget {
         top: false,
         bottom: false,
         child: Scaffold(
+          bottomNavigationBar: BottomNavigationBar(
+            onTap: _onItemTap,
+            items: [
+              BottomNavigationBarItem(
+                icon: Icon(Icons.message),
+                label: 'Home',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.dynamic_feed),
+                label: 'Feed',
+              ),
+            ],
+            currentIndex: _selectedIndex,
+          ),
           drawer: Drawer(
             child: ListView(
               children: [
@@ -79,23 +105,93 @@ class DevScaffold extends StatelessWidget {
                     )
                   ],
                 ),
-                ListTile(
-                  title: Text('Venue Profile'),
+                SizedBox(
+                  height: 20,
                 ),
-                ListTile(
-                  title: Text('Send Post'),
+                Padding(
+                  padding: EdgeInsets.only(left: 15),
+                  child: ListTile(
+                    selectedTileColor: Colors.blue,
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DailyPage()),
+                      );
+                    },
+                    title: Text(
+                      '🗓 Daily Updates',
+                      style: TextStyle(
+                          fontFamily: Devfest.google_sans_family, fontSize: 15),
+                    ),
+                  ),
                 ),
-                ListTile(
-                  title: Text('Tile'),
+                Padding(
+                  padding: EdgeInsets.only(left: 15),
+                  child: ListTile(
+                    selectedTileColor: Colors.blue,
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SendPost()),
+                      );
+                    },
+                    title: Text(
+                      '💬 Post',
+                      style: TextStyle(
+                          fontFamily: Devfest.google_sans_family, fontSize: 15),
+                    ),
+                  ),
                 ),
-                ListTile(
-                  title: Text('Analytics'),
+                Padding(
+                  padding: EdgeInsets.only(left: 15),
+                  child: ListTile(
+                    selectedTileColor: Colors.blue,
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DailyPage()),
+                      );
+                    },
+                    title: Text(
+                      '📈 Analytics',
+                      style: TextStyle(
+                          fontFamily: Devfest.google_sans_family, fontSize: 15),
+                    ),
+                  ),
                 ),
-                ListTile(
-                  title: Text('Settings'),
+                Padding(
+                  padding: EdgeInsets.only(left: 15),
+                  child: ListTile(
+                    selectedTileColor: Colors.blue,
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DailyPage()),
+                      );
+                    },
+                    title: Text(
+                      '👥 Assign Roles',
+                      style: TextStyle(
+                          fontFamily: Devfest.google_sans_family, fontSize: 15),
+                    ),
+                  ),
                 ),
-                ListTile(
-                  title: Text('Assign Roles'),
+                Padding(
+                  padding: EdgeInsets.only(left: 15),
+                  child: ListTile(
+                    selectedTileColor: Colors.blue,
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DailyPage()),
+                      );
+                    },
+                    title: Text(
+                      '⚙ Settings',
+                      style: TextStyle(
+                          fontFamily: Devfest.google_sans_family, fontSize: 15),
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -105,17 +201,6 @@ class DevScaffold extends StatelessWidget {
             centerTitle: true,
             bottom: tabBar != null ? tabBar : null,
             actions: <Widget>[
-              IconButton(
-                icon: Icon(
-                  ConfigBloc().darkModeOn
-                      ? FontAwesomeIcons.lightbulb
-                      : FontAwesomeIcons.solidLightbulb,
-                  size: 18,
-                ),
-                onPressed: () {
-                  // ConfigBloc().add(DarkModeEvent(!ConfigBloc().darkModeOn));
-                },
-              ),
               IconButton(
                 onPressed: () => Share.share(
                     "Download the new DevFest App and share with your tech friends.\nPlayStore -  http://bit.ly/2GDr18N"),
@@ -132,3 +217,5 @@ class DevScaffold extends StatelessWidget {
     );
   }
 }
+
+void setState(Null Function() param0) {}

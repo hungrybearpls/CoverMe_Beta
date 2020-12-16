@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_devfest/create_venues/venue_profile_page.dart';
 
 class UserProfile extends StatelessWidget {
   bool _lights = false;
@@ -52,7 +53,13 @@ class UserProfile extends StatelessWidget {
                     textColor: Colors.black,
                     color: Colors.white,
                     child: Text("Edit"),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => VenueProfilePage()),
+                      );
+                    },
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30.0),
                     ),

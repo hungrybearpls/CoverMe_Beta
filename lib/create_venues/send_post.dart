@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
+import 'package:flutter_devfest/universal/page_scaffold.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 import 'package:f_datetimerangepicker/f_datetimerangepicker.dart';
@@ -44,7 +45,7 @@ class SendPost extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String resultString;
-    return DevScaffold(
+    return PageScaffold(
       title: "Send Post",
       body: SingleChildScrollView(
         child: Padding(

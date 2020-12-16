@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_devfest/HomeTrending/home_trending.dart';
 import 'package:flutter_devfest/config/index.dart';
 import 'package:flutter_devfest/create_venues/send_post.dart';
-import 'package:flutter_devfest/create_venues/venue_profile_page.dart';
-import 'package:flutter_devfest/faq/faq_page.dart';
 import 'package:flutter_devfest/map/map_page.dart';
 import 'package:flutter_devfest/notifications/notification_page.dart';
 import 'package:flutter_devfest/universal/image_card.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
 import 'package:flutter_devfest/utils/tools.dart';
-import 'package:flutter_devfest/venue_auth/screens/onboarding_slides.dart';
-import 'package:flutter_devfest/venue_auth/welcome_login/onboarding_welcome.dart';
 import 'package:flutter_devfest/venue_auth/welcome_login/signin_page.dart';
 import 'package:flutter_devfest/venue_pages/barpage_screen.dart';
 import 'package:flutter_devfest/venue_pages/clubpage_screen.dart';
@@ -41,66 +38,6 @@ class HomeFront extends StatelessWidget {
       throw 'Could not launch $url';
     }
   }
-
-  // Widget actions(context) => Wrap(
-  //       alignment: WrapAlignment.center,
-  //       spacing: 10.0,
-  //       children: <Widget>[
-  //         RaisedButton(
-  //           child: Text("Bars"),
-  //           shape: StadiumBorder(),
-  //           color: Colors.red,
-  //           colorBrightness: Brightness.dark,
-  //           onPressed: () =>
-  //               Navigator.pushNamed(context, NotificationPage.routeName),
-  //         ),
-  //         RaisedButton(
-  //           child: Text("Clubs"),
-  //           shape: StadiumBorder(),
-  //           color: Colors.green,
-  //           colorBrightness: Brightness.dark,
-  //           onPressed: () =>
-  //               Navigator.pushNamed(context, BarPageScreen.routeName),
-  //         ),
-  //         RaisedButton(
-  //           child: Text("Restaurants"),
-  //           shape: StadiumBorder(),
-  //           color: Colors.green,
-  //           colorBrightness: Brightness.dark,
-  //           onPressed: () =>
-  //               Navigator.pushNamed(context, RestaurantPageScreen.routeName),
-  //         ),
-  //         RaisedButton(
-  //           child: Text("Venue Profile"),
-  //           shape: StadiumBorder(),
-  //           color: Colors.orange,
-  //           colorBrightness: Brightness.dark,
-  //           onPressed: () =>
-  //               Navigator.pushNamed(context, VenueProfilePage.routeName),
-  //         ),
-  //         RaisedButton(
-  //           child: Text("Club"),
-  //           shape: StadiumBorder(),
-  //           color: Colors.purple,
-  //           colorBrightness: Brightness.dark,
-  //           onPressed: () => Navigator.pushNamed(context, ClubPage.routeName),
-  //         ),
-  //         RaisedButton(
-  //           child: Text("Profile"),
-  //           shape: StadiumBorder(),
-  //           color: Colors.green,
-  //           colorBrightness: Brightness.dark,
-  //           onPressed: () => Navigator.pushNamed(context, FaqPage.routeName),
-  //         ),
-  //         RaisedButton(
-  //           child: Text("Locate Us"),
-  //           shape: StadiumBorder(),
-  //           color: Colors.blue,
-  //           colorBrightness: Brightness.dark,
-  //           onPressed: () => Navigator.pushNamed(context, MapPage.routeName),
-  //         ),
-  //       ],
-  //     );
 
   Widget newActions(context) => Wrap(
         alignment: WrapAlignment.center,
@@ -154,19 +91,7 @@ class HomeFront extends StatelessWidget {
             title: Devfest.map_text,
             onPressed: () => Navigator.pushNamed(context, MapPage.routeName),
           ),
-          ActionCard(
-            icon: Icons.account_box,
-            color: Colors.pinkAccent,
-            title: Devfest.sponsor_text,
-            onPressed: () =>
-                Navigator.pushNamed(context, VenueProfilePage.routeName),
-          ),
-          ActionCard(
-            icon: Icons.calendar_today,
-            color: Colors.amberAccent,
-            title: Devfest.faq_text,
-            onPressed: () => Navigator.pushNamed(context, FaqPage.routeName),
-          ),
+
           ActionCard(
             icon: Icons.post_add,
             color: Colors.orangeAccent,
@@ -237,6 +162,10 @@ class HomeFront extends StatelessWidget {
                   ? Devfest.banner_dark
                   : Devfest.banner_light,
             ),
+            SizedBox(
+              height: 20,
+            ),
+            HomeTrending(),
             SizedBox(
               height: 20,
             ),

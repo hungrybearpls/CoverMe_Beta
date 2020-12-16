@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/home/venue.dart';
+import 'package:flutter_devfest/universal/page_scaffold.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
-
-import '../home/bar.dart';
-import '../universal/dev_scaffold.dart';
 
 class CreateNotification extends StatelessWidget {
   static const String routeName = "/createnote";
@@ -55,8 +53,8 @@ class CreateNotification extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DevScaffold(
-      title: "Create Post",
+    return PageScaffold(
+      title: 'Send Post',
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(18.0),
