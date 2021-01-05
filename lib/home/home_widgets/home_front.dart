@@ -1,5 +1,5 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_devfest/HomeTrending/home_trending.dart';
 import 'package:flutter_devfest/config/index.dart';
 import 'package:flutter_devfest/create_venues/send_post.dart';
 import 'package:flutter_devfest/map/map_page.dart';
@@ -65,12 +65,6 @@ class HomeFront extends StatelessWidget {
             onPressed: () =>
                 Navigator.pushNamed(context, RestaurantPageScreen.routeName),
           ),
-          // ActionCard(
-          //   icon: Icons.person,
-          //   color: Colors.green,
-          //   title: Devfest.bars_text,
-          //   onPressed: () => Navigator.pushNamed(context, BarPage.routeName),
-          // ),
           ActionCard(
             icon: Icons.schedule,
             color: Colors.deepOrangeAccent,
@@ -84,14 +78,12 @@ class HomeFront extends StatelessWidget {
             title: 'Pay',
             onPressed: () {},
           ),
-
           ActionCard(
             icon: Icons.map,
             color: Colors.indigo,
             title: Devfest.map_text,
             onPressed: () => Navigator.pushNamed(context, MapPage.routeName),
           ),
-
           ActionCard(
             icon: Icons.post_add,
             color: Colors.orangeAccent,
@@ -157,15 +149,28 @@ class HomeFront extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            ImageCard(
-              img: ConfigBloc().darkModeOn
-                  ? Devfest.banner_dark
-                  : Devfest.banner_light,
+            Row(
+              children: [
+                Expanded(
+                  child: ListView(
+                    shrinkWrap: true,
+                    children: [
+                      CarouselSlider(
+                          items: [
+                            ImageCard(
+                              img: Devfest.banner_light,
+                            ),
+                            ImageCard(
+                              img: Devfest.banner_dark,
+                            )
+                          ],
+                          options: CarouselOptions(
+                              height: 300, scrollDirection: Axis.horizontal))
+                    ],
+                  ),
+                ),
+              ],
             ),
-            SizedBox(
-              height: 20,
-            ),
-            HomeTrending(),
             SizedBox(
               height: 20,
             ),

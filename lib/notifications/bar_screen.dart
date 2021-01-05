@@ -8,11 +8,11 @@ class BarScreen extends StatelessWidget {
   const BarScreen({Key key, this.homeBloc}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    // var state = homeBloc.currentState as InHomeState;
-    // var notifications = state.venueData.post;
-    // var barSessions = notifications.where((s) => s.track == "bar").toList();
-    // return NotificationList(
-    //   allPosts: barSessions,
-    // );
+    var state = homeBloc.state as InHomeState;
+    var notifications = state.venueData.post;
+    var barSessions = notifications.where((s) => s.track == "bar").toList();
+    return NotificationList(
+      allPosts: barSessions,
+    );
   }
 }
